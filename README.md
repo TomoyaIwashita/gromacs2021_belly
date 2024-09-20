@@ -27,7 +27,7 @@ This option set the name of the trr file including the results of $f_{ano}^i$.
 This option set the $n_{prd}$ to <int>.
 
 -qfacter <int>
-This option set the $n_{buffer} to <int>.
+This option set the $n_{buffer}$ to <int>.
 
 -nsteps <int>
 This option set the number of frames of the target solute conformation.
