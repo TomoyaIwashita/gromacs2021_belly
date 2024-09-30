@@ -3,7 +3,7 @@ READUME ON THE MODIFIED VERSION
 ---------------------------------
 This version is build on the Gromacs 2021.4.
 This modification enable us to join multiple belly simulations to each other using several quasi-static steps. The details and concepts of this programs can be found at
-（Coming soon）
+https://arxiv.org/abs/2409.17028
 .
 
 In order to conduct the belly simulations continuously, We added some options of gmx-mdrun.
@@ -36,9 +36,13 @@ This option set the number of frames of the target solute conformation.
 This option can skip <int> frames of the target solute conformation.
 This is optional.
 
+※The above options can only be used with the leap-frog algorithm (velocity Verlet is not supported). They also cannot be used with MPI parallelization that employs domain decomposition.
+
 5, You can get the result from the "res.trr" whose name can be changed by the option -writers.
 
-The above options can only be used with the leap-frog algorithm (velocity Verlet is not supported). They also cannot be used with MPI parallelization that employs domain decomposition.
+This program does not conduct the correction expressed by Eq. S1 (See Suporting material in https://arxiv.org/abs/2409.17028). You should apply the correction later. Also, you must projection the results to the target solute conformation in the original direction if you conducted the superimposing of the initial and target solute conformations.
+
+
 
 ---------------------------------
 READUME ON THE OFICIAL VERSION
