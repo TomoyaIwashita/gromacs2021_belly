@@ -3,6 +3,8 @@ READUME ON THE MODIFIED VERSION
 ---------------------------------
 This version is build on the Gromacs 2021.4.
 This modification enable us to join multiple belly simulations to each other using several quasi-static steps. The details and concepts of this programs can be found at
+https://doi.org/10.1063/5.0241914
+also,
 https://arxiv.org/abs/2409.17028
 .
 
