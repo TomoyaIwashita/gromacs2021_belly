@@ -15,7 +15,7 @@ The below is the description of the useage.
 3, Prepare as usual with gmx-grompp.
 4, Run gmx-mdrun as follows:
 
-example: gmx mdrun -deffnm test -readcf fit.trr -writers res.trr -nstepinner 100 -qfacter 5000 -nsteps 10000 -ncfskip 100
+example: gmx mdrun -deffnm test -readcf fit.trr -writers res.trr -nstepsinner 100 -qfacter 5000 -nsteps 10000 -ncfskip 100
 
 -readcf <trr file>
 This option set the name of the trr file including the target solute conformations.
