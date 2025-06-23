@@ -45,20 +45,30 @@ This is optional.
 This program does not conduct the correction expressed by Eq. S1 (See Suporting material in https://arxiv.org/abs/2409.17028). You should apply the correction later. Also, you must projection the results to the target solute conformation in the original direction if you conducted the superimposing of the initial and target solute conformations.
 
 If you encounter an error like the following:
+-----------------------------------------------
 Mac OS X                2   ~      ?                                      ATTR       ?   ?                     ?     com.apple.quarantine q/0081;6859c9b0;Chrome; 
+-----------------------------------------------
 
 It is likely caused by macOS metadata files, to solve this, run the following commands:
+--------------------------------------------------------------
 find /home/usr/local/gromacs2021_belly/src -name "._*" -delete
+
 find /home/usr/local/gromacs2021_belly/share/top -name "._*" -delete
+
 cd ..
+
 rm build
+
 mkdir build
+
 cd build
+
+--------------------------------------------------------------
 
 And, Proceed a normal process to install gromacs.
 
 In "make check", you also encounter an error like the following:
-
+53 - MdrunOutputTests (Failed).
 But, it is no problem.
 
 ---------------------------------
